@@ -63,6 +63,7 @@ my-portfolio/
 ## 🔗 Links
 
 - **Live Portfolio:** [https://hamzaaboudi.github.io/My-Portfolio/](https://hamzaaboudi.github.io/My-Portfolio/)
+Or [https://hamzaaboudiportfolio.vercel.app/)
 - **GitHub Repository:** [https://github.com/HamzaAboudi/My-Portfolio](https://github.com/HamzaAboudi/My-Portfolio)
 
 ## 📄 License
