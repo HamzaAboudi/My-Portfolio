@@ -379,6 +379,11 @@ body {
   width: 100%;
 }
 
+.btn.small {
+  padding: 0.45rem 0.95rem;
+  font-size: 0.8rem;
+}
+
 /* Cards & grids */
 
 .about-cards {
@@ -429,10 +434,45 @@ body {
   font-size: 0.95rem;
 }
 
-.skill-group ul {
-  margin: 0;
-  padding-left: 1.1rem;
+.skill-icons {
+  list-style: none;
+  margin: 0.2rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-icon {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0.4rem 0.55rem;
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  min-width: 70px;
+  transition: transform 180ms ease-out, box-shadow 200ms ease-out, border-color 180ms ease-out, background 180ms ease-out;
+}
+
+.skill-icon i {
+  font-size: 1.65rem;
+}
+
+.skill-icon span {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
   color: var(--muted);
+}
+
+.skill-icon:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.85);
+  border-color: rgba(129, 140, 248, 0.9);
+  background: radial-gradient(circle at top, rgba(59, 130, 246, 0.18), #020617);
 }
 
 @media (max-width: 960px) {
@@ -466,6 +506,42 @@ body {
   flex-direction: column;
   gap: 0.7rem;
   transition: transform 200ms ease-out, box-shadow 220ms ease-out, border-color 200ms ease-out, background 200ms ease-out;
+}
+
+.project-thumb {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(30, 64, 175, 0.7);
+  background: radial-gradient(circle at top, rgba(30, 64, 175, 0.75), #020617);
+  aspect-ratio: 16 / 9;
+}
+
+.project-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: saturate(1.05) contrast(1.05);
+  transform: scale(1.02);
+  transition: transform 260ms ease-out, filter 260ms ease-out;
+}
+
+.project-card:hover .project-thumb img {
+  transform: scale(1.06);
+  filter: saturate(1.12) contrast(1.08) brightness(1.02);
+}
+
+.project-thumb--placeholder {
+  border-style: dashed;
+  border-color: rgba(148, 163, 184, 0.6);
+  background: radial-gradient(circle at top, rgba(30, 64, 175, 0.4), #020617);
+}
+
+.project-summary {
+  margin: 0.4rem 0 0.3rem;
+  color: var(--muted);
+  font-size: 0.88rem;
 }
 
 .project-card:hover {

@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 <body>
   <header class="site-header">
@@ -117,36 +118,72 @@
           A mix of <strong>frontend, backend, and design</strong> skills, built around real school projects and a stage for an online gym.
         </p>
         <div class="skills-grid">
-          <article class="skill-group" data-reveal="card">
+          <article class="skill-group" data-reveal="card" data-reveal-direction="left">
             <h3>Frontend</h3>
-            <ul>
-              <li>HTML5 – semantic, accessible markup</li>
-              <li>CSS3 – responsive layouts, flexbox, basic grid</li>
-              <li>JavaScript – DOM manipulation, events, basic logic</li>
+            <ul class="skill-icons">
+              <li class="skill-icon">
+                <i class="devicon-html5-plain colored" aria-hidden="true"></i>
+                <span>HTML5</span>
+              </li>
+              <li class="skill-icon">
+                <i class="devicon-css3-plain colored" aria-hidden="true"></i>
+                <span>CSS3</span>
+              </li>
+              <li class="skill-icon">
+                <i class="devicon-javascript-plain colored" aria-hidden="true"></i>
+                <span>JavaScript</span>
+              </li>
             </ul>
           </article>
-          <article class="skill-group" data-reveal="card">
+          <article class="skill-group" data-reveal="card" data-reveal-direction="up">
             <h3>Backend &amp; programming</h3>
-            <ul>
-              <li>PHP – basic backend logic, handling forms, dynamic pages</li>
-              <li>C – fundamentals of programming, control flow, algorithms</li>
-              <li>Java – OOP basics, small console/mini applications</li>
+            <ul class="skill-icons">
+              <li class="skill-icon">
+                <i class="devicon-php-plain colored" aria-hidden="true"></i>
+                <span>PHP</span>
+              </li>
+              <li class="skill-icon">
+                <i class="devicon-c-plain colored" aria-hidden="true"></i>
+                <span>C</span>
+              </li>
+              <li class="skill-icon">
+                <i class="devicon-java-plain colored" aria-hidden="true"></i>
+                <span>Java</span>
+              </li>
             </ul>
           </article>
-          <article class="skill-group" data-reveal="card">
+          <article class="skill-group" data-reveal="card" data-reveal-direction="right">
             <h3>Design &amp; creativity</h3>
-            <ul>
-              <li>Figma – UI wireframes, web layouts, simple prototypes</li>
-              <li>Adobe Photoshop – image editing, web assets, social visuals</li>
-              <li>Adobe Illustrator – logos, icons, vector graphics</li>
+            <ul class="skill-icons">
+              <li class="skill-icon">
+                <i class="devicon-figma-plain colored" aria-hidden="true"></i>
+                <span>Figma</span>
+              </li>
+              <li class="skill-icon">
+                <i class="devicon-photoshop-plain colored" aria-hidden="true"></i>
+                <span>Photoshop</span>
+              </li>
+              <li class="skill-icon">
+                <i class="devicon-illustrator-plain colored" aria-hidden="true"></i>
+                <span>Illustrator</span>
+              </li>
             </ul>
           </article>
-          <article class="skill-group" data-reveal="card">
+          <article class="skill-group" data-reveal="card" data-reveal-direction="up">
             <h3>Workflow &amp; mindset</h3>
-            <ul>
-              <li>Git &amp; GitHub – basic branching and pull requests</li>
-              <li>VS Code – extensions, debugging, productivity</li>
-              <li>Curious, consistent learner focused on fundamentals</li>
+            <ul class="skill-icons">
+              <li class="skill-icon">
+                <i class="devicon-git-plain colored" aria-hidden="true"></i>
+                <span>Git</span>
+              </li>
+              <li class="skill-icon">
+                <i class="devicon-github-original" aria-hidden="true"></i>
+                <span>GitHub</span>
+              </li>
+              <li class="skill-icon">
+                <i class="devicon-vscode-plain colored" aria-hidden="true"></i>
+                <span>VS Code</span>
+              </li>
             </ul>
           </article>
         </div>
@@ -161,69 +198,54 @@
           More projects will be added as I build them.
         </p>
         <div class="projects-grid">
-          <article class="project-card" data-reveal="card">
+          <article class="project-card" data-reveal="card" data-reveal-direction="up">
             <header>
               <h3>🏋️ Online Gym Website</h3>
               <span class="project-tag">Stage project</span>
             </header>
-            <p>
-              A responsive website for an online gym, created during my internship. It presents
-              classes, coaches, and membership plans in a clear, modern layout aimed at converting
-              visitors into clients.
+            <figure class="project-thumb">
+              <img src="images/online-gym.png" alt="Screenshot of the online gym website" loading="lazy" />
+            </figure>
+            <p class="project-summary">
+              Responsive landing site for an online gym, presenting classes, coaches, and membership plans.
             </p>
-            <ul class="project-list">
-              <li>Landing page with hero section and clear call-to-action</li>
-              <li>Sections for classes, coaches, pricing, and contact</li>
-              <li>Contact / registration forms for potential clients</li>
-              <li>Structured, maintainable HTML and CSS with simple JavaScript interactions</li>
-            </ul>
-            <p class="project-tech"><strong>Tech:</strong> HTML, CSS, JavaScript (can be extended with PHP for backend forms &amp; authentication)</p>
             <div class="project-links">
-              <a href="https://github.com/AzkunoYT" target="_blank" rel="noopener">View repo on GitHub</a>
-              <span class="project-note">Add live demo link here when deployed</span>
+              <a href="#" class="btn primary small" target="_blank" rel="noopener">View website</a>
+              <a href="https://github.com/AzkunoYT" class="btn ghost small" target="_blank" rel="noopener">View GitHub repo</a>
             </div>
           </article>
 
-          <article class="project-card" data-reveal="card">
+          <article class="project-card" data-reveal="card" data-reveal-direction="right">
             <header>
               <h3>📚 Student Dashboard (concept)</h3>
               <span class="project-tag project-tag--planned">Planned</span>
             </header>
-            <p>
-              A simple dashboard for students to track assignments, deadlines, and notes. This
-              project is designed to combine <strong>frontend UI</strong> with a small
-              <strong>PHP backend</strong> for saving and loading data.
+            <figure class="project-thumb project-thumb--placeholder">
+              <img src="images/student-dashboard.png" alt="Concept UI for a student dashboard" loading="lazy" />
+            </figure>
+            <p class="project-summary">
+              Concept dashboard to manage assignments, deadlines, and notes in a clean, card-based UI.
             </p>
-            <ul class="project-list">
-              <li>Task list with status (to-do, in progress, done)</li>
-              <li>Deadline highlights and simple reminders</li>
-              <li>Clean, card-based UI with responsive layout</li>
-              <li>Basic CRUD operations via PHP (future improvement)</li>
-            </ul>
-            <p class="project-tech"><strong>Tech (planned):</strong> HTML, CSS, JavaScript, PHP</p>
             <div class="project-links">
-              <span class="project-note">Once built, link GitHub repo &amp; live demo here.</span>
+              <a href="#" class="btn primary small" target="_blank" rel="noopener">View website</a>
+              <a href="#" class="btn ghost small" target="_blank" rel="noopener">View GitHub repo</a>
             </div>
           </article>
 
-          <article class="project-card" data-reveal="card">
+          <article class="project-card" data-reveal="card" data-reveal-direction="left">
             <header>
               <h3>🎨 Design Systems &amp; UI Kits</h3>
               <span class="project-tag project-tag--design">Design</span>
             </header>
-            <p>
-              A collection of Figma and Adobe layouts for landing pages, dashboards, and
-              brand concepts. These designs help me think about <strong>spacing, typography,
-              and visual hierarchy</strong> before writing code.
+            <figure class="project-thumb project-thumb--placeholder">
+              <img src="images/design-systems.png" alt="Preview of design system components and UI kit" loading="lazy" />
+            </figure>
+            <p class="project-summary">
+              A set of reusable UI components and layouts designed in Figma and Adobe tools.
             </p>
-            <ul class="project-list">
-              <li>Reusable button, card, and form components</li>
-              <li>Color and typography styles based on real products</li>
-              <li>Gym, education, and digital service themes</li>
-            </ul>
-            <p class="project-tech"><strong>Tools:</strong> Figma, Adobe Photoshop, Adobe Illustrator</p>
             <div class="project-links">
-              <span class="project-note">You can add Figma or Behance links here later.</span>
+              <a href="#" class="btn primary small" target="_blank" rel="noopener">View design shots</a>
+              <a href="#" class="btn ghost small" target="_blank" rel="noopener">View case study</a>
             </div>
           </article>
         </div>
